@@ -6,7 +6,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;700&family=Noto+Sans+Arabic&display=swap" rel="stylesheet">
 <style>
   body { font-family: 'Arial', sans-serif; background: linear-gradient(to bottom, #fdf6f0, #f9f9f9); margin:0; padding:0; text-align:center; color:#333; }
-  #language { position: fixed; bottom:15px; left:15px; padding:8px 10px; font-size:14px; border-radius:5px; border:1px solid #ccc; background-color: rgba(255,255,255,0.9); box-shadow:0 3px 10px rgba(0,0,0,0.1); z-index:1000; }
+  #language {
+    position: fixed;
+    bottom:15px;
+    right:15px;       /* moved to right */
+    left:auto;         /* cancel left */
+    padding:8px 10px;
+    font-size:14px;
+    border-radius:5px;
+    border:1px solid #ccc;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    z-index:1000;
+  }
   main { padding:40px 20px; max-width:900px; margin:auto; }
   h1 { font-family:'Noto Kufi Arabic', sans-serif; font-weight:700; font-size:2.2em; margin-bottom:10px; color:#5B321B; text-align:center; }
   h2 { font-family:'Noto Kufi Arabic', sans-serif; font-weight:400; font-size:1.5em; margin-bottom:30px; color:#222; text-align:center; }
@@ -16,8 +28,8 @@
   .small-images img { width:35%; max-width:350px; height:auto; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
   .small-images img:hover { transform:scale(1.03); box-shadow:0 12px 25px rgba(0,0,0,0.15); }
   .lang { display:none; font-family:'Noto Sans Arabic', sans-serif; font-size:18px; line-height:1.7; margin-top:20px; padding:20px; text-align:justify; background-color: rgba(255,255,255,0.8); border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.05); }
-  @media (max-width:768px) { #main-image { width:95%; max-width:800px; } .small-images { flex-direction:column; gap:15px; align-items:center; } .small-images img { width:80%; max-width:500px; } .lang { font-size:16px; padding:15px; } h1 { font-size:1.8em; } h2 { font-size:1.3em; } #language { font-size:13px; padding:6px 8px; bottom:10px; left:10px; } }
-  @media (max-width:480px) { h1 { font-size:1.5em; } h2 { font-size:1.1em; } .lang { font-size:15px; } #language { font-size:12px; padding:5px 6px; } }
+  @media (max-width:768px) { #main-image { width:95%; max-width:800px; } .small-images { flex-direction:column; gap:15px; align-items:center; } .small-images img { width:80%; max-width:500px; } .lang { font-size:16px; padding:15px; } h1 { font-size:1.8em; } h2 { font-size:1.3em; } #language { font-size:13px; padding:6px 8px; bottom:10px; } }
+  @media (max-width:480px) { h1 { font-size:1.5em; } h2 { font-size:1.1em; } .lang { font-size:15px; } #language { font-size:13px; padding:7px 8px; } } /* slightly bigger on phones */
 </style>
 </head>
 <body>
@@ -63,7 +75,7 @@ This is not merely a painting but a reflection of a nation's soul and a legacy o
   </p>
 </div>
 
-<!-- French (start, part 2 will complete) -->
+<!-- French -->
 <div class="lang" id="fr">
   <h1>L'Héritage de l'Identité</h1>
   <h2>Ce message exprimé par cette œuvre vous touche-t-il ?</h2>
